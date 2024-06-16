@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>김도현의 블로그 - 부평역 지하상가 탈출하기</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png"></a>
+        </div>
+        <div class="nav">
+            <ul class="menu">
+                <li><a href="index.html">소개합니다</a>
+                    <ul class="submenu">
+                        <li><a href="index.html#p1-1">김도현의 블로그</a></li>
+                        <li><a href="index.html#p1-2">포트폴리오</a></li>
+                        <li><a href="index.html#p1-3" class="nowifi">방명록</a></li>
+                    </ul>
+                </li>
+                <li><a href="python.html">부평역 지하상가 탈출하기</a>
+                    <ul class="submenu">
+                        <li><a href="python.html#p2-1">게임 설명</a></li>
+                        <li><a href="python.html#p2-2">코드 설명</a></li>
+                        <li><a href="python.html#p2-3">게임 플레이</a></li>
+                        <li><a href="python.html#p2-4" class="nowifi">댓글</a></li>
+                    </ul>
+                </li>
+                <li><a href="c.html">inpostfix</a>
+                    <ul class="submenu">
+                        <li><a href="c.html#p3-1">게임 설명</a></li>
+                        <li><a href="c.html#p3-2">코드 설명</a></li>
+                        <li><a href="c.html#p3-3">게임 플레이</a></li>
+                        <li><a href="c.html#p3-4" class="nowifi">댓글</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="left-menu">
+            <ul>
+                <li><a href="#" class="menu-title">부평역 지하상가 탈출하기</a></li>
+                <li><a href="#p2-1" class="menu-item">게임 설명</a></li>
+                <li><a href="#p2-2" class="menu-item">코드 설명</a></li>
+                <li><a href="#p2-3" class="menu-item">게임 플레이</a></li>
+                <li><a href="#p2-4" class="menu-item nowifi">댓글</a></li>
+            </ul>
+        </div>
+        <div class="popup">
+            <div class="popup1">
+                <img src="img/nowifi.png" alt="팝업이미지">
+            </div>
+            <div class="popup2">
+                <p>인터넷에 연결되지 않았습니다.</p>
+            </div>
+            <div class="popup3">
+                <p>이 사이트의 현재 버전은 수행평가 제출용이며, 로컬 호스트에서 열립니다.
+                <br><br>방명록, 댓글과 같은 인터넷이 필요한 기능은 도메인을 등록한 후 이용 가능하게 할 예정입니다.
+                <br><br>2024. 6. 17.
+                </p>
+            </div>
+            <div class="popup4">
+                <button>확인</button>
+            </div>
+        </div>
+        <div class="slide">
+            <div><img src="img/slide1.png" alt="슬라이드1"></div>
+            <div><img src="img/slide2.png" alt="슬라이드2"></div>
+            <div><img src="img/slide3.png" alt="슬라이드3"></div>
+            <div><img src="img/slide4.png" alt="슬라이드4"></div>
+        </div>
+        <div class="subpage">
+            <section id="p2-1">
+                <p class="sectiontitle"><br><br>게임 설명</p>
+                <p class="sectiontext">
+                    <img src="img/slide2.png">
+                    이 게임은 파이썬 수행평가를 위해 제작되었습니다.<br><br>
+                    부평역 지하상가를 탈출한다는 컨셉의, 텍스트 기반 던전 게임입니다.
+                </p>
+            <section id="p2-2">
+                <p class="sectiontitle"><br><br>코드 설명</p>
+                <p class="sectiontext">
+                <a href="games/지하상가 탈출하기 0.1.1.py" target="_blank"><u>코드 보기</u></a><br><br>
+                </p>
+                <p class="sectiontext">
+                    <span class="sectionsubtitle">주요 클래스 및 함수</span><br>
+                    <span class="sectionsubsubtitle">한글 조사 출력 함수</span><br>
+                    이 함수는 한국어 문법에 맞게 조사를 출력하기 위해 사용됩니다.<br>
+                    종성(kstr): 문자열의 마지막 글자가 받침을 가지는지 확인합니다.<br>
+                    을(kstr), 이(kstr), 와(kstr), 은(kstr): 각각 을/를, 이/가, 과/와, 은/는 조사를 올바르게 붙여줍니다.<br><br>
+                    <span class="sectionsubsubtitle">플레이어 클래스</span><br>
+                    플레이어의 기본 정보(이름, 최대 HP, 현재 HP, 골드, 인벤토리, 최소/최대 공격력)를 저장합니다.<br>
+                    공격(): 몬스터를 공격합니다.<br>
+                    방어(): 방어 태세를 취합니다.<br>
+                    아이템_사용(): 인벤토리에서 아이템을 사용하여 HP를 회복합니다.<br><br>
+                    <span class="sectionsubsubtitle">몹 클래스</span><br>
+                    몬스터의 기본 정보(이름, 최대 HP, 현재 HP, 골드, 스킬)를 저장합니다.<br>
+                    스킬_사용(): 몬스터가 스킬을 사용하여 플레이어를 공격합니다.<br><br>
+                    <br>
+                    <br>
+                    <span class="sectionsubtitle">주요 데이터</span><br>
+                    <span class="sectionsubsubtitle">몬스터 데이터</span><br>
+                    깡패, 잼민이, 일진, 할머니, 바가지상인, 노숙자, 자전거배달원: 각각 다른 이름과 스킬을 가진 몬스터 객체입니다.<br>
+                    몹리스트: 각 길에 등장하는 몬스터 리스트를 저장합니다.<br>
+                    <br>
+                    <span class="sectionsubsubtitle">아이템 데이터</span><br>
+                    껌, 초코바, 아이스크림, 몬스터에너지, 즉석떡볶이, 삼각김밥, 술, 매운닭발, 하겐다즈: 각각 이름, 설명, 가격, 회복량을 가진 아이템 객체입니다.<br>
+                    아이템리스트: 상점에서 등장할 수 있는 아이템 리스트를 저장합니다.<br>
+                    <br>
+                    <br>
+                    <span class="sectionsubtitle">주요 함수</span><br>
+                    체력바()<br>
+                    현재 체력과 최대 체력 비율에 따라 체력바를 출력합니다.<br>
+                    전투()<br>
+                    플레이어와 몬스터 간의 전투를 진행합니다.<br>
+                    상점()<br>
+                    상점을 발견했을 때, 아이템을 구입할 수 있는 기회를 제공합니다.<br>
+                    기타_이벤트()<br>
+                    다양한 랜덤 이벤트를 발생시킵니다.<br>
+                    <br>
+                    <br>
+                    <span class="sectionsubtitle">게임 진행</span><br>
+                    게임은 플레이어가 부평역 지하상가를 탐험하며 몬스터와 싸우고, 아이템을 사용하여 HP를 회복하고, 최종적으로 목표 지점에 도달하면 승리하는 방식으로 진행됩니다.<br>
+                </p>
+            <section id="p2-3">
+                <p class="sectiontitle"><br><br>게임 플레이</p>
+                <p class="sectiontext">코드를 <a href="games/지하상가 탈출하기 0.1.1.py" target="_blank"><u>다운로드</u></a>하고, idle이나 powershell로 실행하시면 됩니다.<br></p>
+                <p class="sectiontext"><i>py "지하상가 탈출하기 0.1.1.py"</i><br><br></p>
+                <p class="sectiontext">실행에는 python 설치가 필요합니다.
+                    <img src="img/image5.png">
+                </p>
+            </section>
+            <section id="p2-4">
+                <p class="sectiontitle"><br><br>댓글</p>
+                <p class="sectiontext">
+                    준비 중입니다.<br><br>
+                </p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="info">
+            <br><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">Dohyun Kim's Blog</span> by <span property="cc:attributionName">Dohyun Kim</span> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0 <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt=""></a></p>
+        </div>
+        <div class="sns">
+            <a href="https://www.twitter.com"><img src="img/twit.png"></a>
+            <a href="https://www.facebook.com"><img src="img/face.png"></a>
+            <a href="https://www.instagram.com"><img src="img/insta.png"></a>
+        </div>
+    </footer>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
